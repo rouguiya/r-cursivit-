@@ -1,0 +1,18 @@
+ALGORITHM palindrome;
+VAR
+    i,j:integer;
+    tab:array[1..10] of integer;
+BEGIN
+FOR i:=1 TO 10 DO
+    writeln('saisir l''élément',i);
+    readln(tab[i]);
+END_FOR
+WHILE ((tab[i]=tab[j]) and (i<=5) ) DO
+   i:=i+1;
+   j:=j-1;
+   if (i<=5) then
+   writeln('non un palindrome')
+ else
+ writeln('un palindrome')
+END_WHILE
+END.
